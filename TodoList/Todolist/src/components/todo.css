@@ -1,0 +1,191 @@
+*{
+    margin:0px;
+   padding:0px;
+}
+.Todolist-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(4.5,1.5,0.5,5);
+ }
+
+.heading{
+    margin-top:0;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align:center;
+    margin-bottom:2rem;
+
+ }
+ .container {
+    width: 30rem;
+    height: 30rem;
+    background-color: lightgray;
+    background-color: rgba(128, 10, 32, 5); 
+    color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    width: 20rem;
+    padding:.8rem;
+    border-radius:.2rem;
+    border: none;
+    margin-right:.1rem;
+    text-decoration:none;
+    transition: border 0.3s ease;
+}
+input:focus {
+    outline: none; 
+  
+    border-bottom: 3px solid #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: add a e shadow */
+}
+
+.myDropdown{
+    outline: none; 
+    border: 2px solid lightgray;
+    border-radius:.2rem;
+    margin-left:4rem;
+    padding:.3rem;
+}
+
+button{
+   padding:.4rem;
+   background-color:purple;
+   border:purple;
+   border-radius:.2rem;
+   color:white;
+   width:10rem;
+}
+
+.drop-down{
+    display:flex;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+.myDropdown option{
+    border-radius:1rem;
+}
+
+.myDropdown:focus{
+    outline:none;
+}
+.btn{
+    font-weight:bold;
+    text-decoration: none;
+      width: 6rem;
+      border-radius: .2rem;
+      border: 1px solid transparent;
+      padding: .8rem;
+      color: white;
+      font-weight: 500;
+      font-family: inherit;
+      background-color: green;  
+      cursor: pointer;
+}
+
+.todolist ul {
+    list-style-type: none;            
+    padding: 0;                       
+    margin: 0;                        
+
+}
+li {
+    display: flex;                    
+    padding: 10px;    
+    background-color: darkgray;
+    color: black;
+    margin-top: 1rem;
+    margin-left:1rem;
+    justify-content:space-between;
+    border-radius:.2rem;
+    max-width: 25rem; 
+    font-size:1.1rem;
+    padding-left:2rem;
+    text-align:center;
+}
+
+ .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom:1rem;
+}
+ 
+.icons{
+    display:flex;
+    gap:10px;
+}
+
+.trash-icon {
+    color: white;
+    cursor: pointer;
+    float: right;
+    background-color:red;
+    width:1.5rem;
+    border-radius:.2rem;
+    padding:.3rem;
+}
+
+.edit-icon {
+    color: white; 
+    margin-left: 0.5rem; 
+    transition: color 0.3s;
+    cursor: pointer;
+    width:2rem;
+    border-radius:.2rem;
+    padding:.3rem;
+    background-color:green;
+
+} 
+
+.cross-icon{
+    color: white; 
+    margin-left: 0.5rem; 
+    transition: color 0.3s;
+    cursor: pointer;
+    width: 1.6rem;
+    border-radius:.2rem;
+    padding:.3rem;
+    background-color: yellow;
+}
+
+.check-icon{
+    color: white; 
+    transition: color 0.3s;
+    cursor: pointer;
+    width:1.6rem;
+    border-radius:.2rem;
+    padding:.3rem;
+    background-color:blue;
+}
+
+input:hover{
+    border-bottom: 2px soild blue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    li {
+        margin-left: 2rem;  /* Less margin on smaller screens */
+        max-width: 90%;      /* Allow it to take more width */
+        font-size: 1rem;     /* Slightly smaller font size */
+    }
+    .container{
+        width: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        margin-left: 0;      /* Remove left margin */
+        padding: 8px;        /* Less padding for compactness */
+        font-size: 0.9rem;    /* Smaller font size */
+    }
+}
